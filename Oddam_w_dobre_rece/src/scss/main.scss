@@ -1,0 +1,11 @@
+@import "./settings/colors";
+@import "./settings/font";
+@import "./styles/HomeHeader";
+
+body {
+  background-color: $color-background;
+  font-family: $font-base;
+}
+
+.body-size {
+}
