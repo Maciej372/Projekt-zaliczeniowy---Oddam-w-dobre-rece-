@@ -1,0 +1,16 @@
+.home-decoration {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.home-decoration-title {
+  font-family: $font-base;
+  font-size: 38px;
+  color: $color-grey-dark;
+  margin-bottom: 25px;
+}
+.home-decoration-img {
+}

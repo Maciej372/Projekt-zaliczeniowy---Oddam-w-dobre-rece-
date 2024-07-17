@@ -2,13 +2,18 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
 import HomeThreeColumns from "./HomeThreeColumns";
+import HomeDecoration from "./HomeDecoration";
+import HomeMainIdea from "./HomeMainIdea";
+import HomeButton from "./HomeButton";
 
 const Home = () => {
   return (
     <div className="home">
       <HomeHeader />
       <HomeThreeColumns />
-      {/* Tutaj dodaj inne komponenty sekcji Home */}
+      <HomeDecoration />
+      <HomeMainIdea />
+      <HomeButton />
     </div>
   );
 };

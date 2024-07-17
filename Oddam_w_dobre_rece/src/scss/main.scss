@@ -1,6 +1,12 @@
 @import "./settings/colors";
 @import "./settings/font";
 @import "./styles/HomeHeader";
+@import "./styles/LoginNavigation";
+@import "./styles/MainNavigation";
+@import "./styles/HomeThreeColumns";
+@import "./styles/HomeDecoration";
+@import "./styles/HomeMainIdea";
+@import "./styles/HomeButton";
 
 body {
   background-color: $color-background;

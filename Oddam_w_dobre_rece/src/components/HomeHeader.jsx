@@ -1,87 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import MainNavigation from "./MainNavigation";
+import LoginNavigation from "./LoginNavigation";
 
 const HomeHeader = () => {
   return (
     <header className="header">
-      <div className="flex w-min-[1900px] h-full bg-red">
+      <div className="flex w-min-[1900px] bg-red">
         <div
           className="bg-cover bg-right w-[885px] h-[963px]"
           style={{
             backgroundImage: 'url("../src/assets/Home-Hero-Image.jpg")',
           }}
         ></div>
-        <div className="flex w-1/2 h-1/2 flex-col justify-start items-center w-[1005px] h-[963px]">
+        <div className="flex flex-col justify-start items-center w-[1005px] h-[963px]">
           <div className="h-1/2 w-full">
-            <nav className="navbar">
-              <ul className="navbar-nav flex space-x-8">
-                <li className="nav-item">
-                  <Link to="/login" className="nav-link">
-                    Zaloguj się
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/register" className="nav-link">
-                    Załóż konto
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-            <nav className="footer-nav mt-8">
-              <ul className="footer-nav-list flex space-x-8">
-                <li className="footer-nav-item">
-                  <ScrollLink
-                    to="start-section"
-                    smooth={true}
-                    duration={500}
-                    className="footer-nav-link"
-                  >
-                    Start
-                  </ScrollLink>
-                </li>
-                <li className="footer-nav-item">
-                  <ScrollLink
-                    to="login-section"
-                    smooth={true}
-                    duration={500}
-                    className="footer-nav-link"
-                  >
-                    O co chodzi?
-                  </ScrollLink>
-                </li>
-                <li className="footer-nav-item">
-                  <ScrollLink
-                    to="login-section"
-                    smooth={true}
-                    duration={500}
-                    className="footer-nav-link"
-                  >
-                    O nas
-                  </ScrollLink>
-                </li>
-                <li className="footer-nav-item">
-                  <ScrollLink
-                    to="login-section"
-                    smooth={true}
-                    duration={500}
-                    className="footer-nav-link"
-                  >
-                    Fundacja i organizacje
-                  </ScrollLink>
-                </li>
-                <li className="footer-nav-item">
-                  <ScrollLink
-                    to="login-section"
-                    smooth={true}
-                    duration={500}
-                    className="footer-nav-link"
-                  >
-                    Kontakt
-                  </ScrollLink>
-                </li>
-              </ul>
-            </nav>
+            <LoginNavigation />
+            <MainNavigation />
           </div>
           <h4 className="title">
             Zacznij pomagać!
