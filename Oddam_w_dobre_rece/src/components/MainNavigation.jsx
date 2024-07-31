@@ -1,26 +1,33 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { scroller } from "react-scroll";
 
 const navLinks = [
-  { name: "Start", href: "#start" },
-  { name: "O co chodzi?", href: "#idea" },
-  { name: "O nas", href: "#about" },
-  { name: "Fundacja i organizacje", href: "#organizations" },
-  { name: "Kontakt", href: "#contact" },
+  { name: "Start", to: "start" },
+  { name: "O co chodzi?", to: "idea" },
+  { name: "O nas", to: "about" },
+  { name: "Fundacja i organizacje", to: "organizations" },
+  { name: "Kontakt", to: "contact" },
 ];
 
 const MainNavigation = () => {
+  const handleScroll = (to) => {
+    scroller.scrollTo(to, {
+      smooth: true,
+      duration: 500,
+      offset: -70,
+    });
+  };
+
   return (
     <nav>
       <ul className="navigationList">
-        {navLinks.map((link) => {
-          return (
-            <li key={link.name}>
-              <Link className="navLink" href={link.href}>
-                {link.name}
-              </Link>
-            </li>
-          );
-        })}
+        {navLinks.map((link) => (
+          <li key={link.name}>
+            <button className="navButton" onClick={() => handleScroll(link.to)}>
+              {link.name}
+            </button>
+          </li>
+        ))}
       </ul>
     </nav>
   );

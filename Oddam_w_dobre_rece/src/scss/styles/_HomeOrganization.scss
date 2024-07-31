@@ -1,0 +1,15 @@
+.homeOrganizations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  h2 {
+    margin-top: 7rem;
+  }
+  img {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+}

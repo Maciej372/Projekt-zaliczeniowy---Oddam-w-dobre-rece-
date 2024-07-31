@@ -1,14 +1,16 @@
 .navigationList {
-  font-size: 1rem;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.5rem;
+  gap: 35px;
   list-style: none;
   margin: 0;
-  margin-right: 14rem;
 
   a {
     color: $color-grey-dark;
   }
+}
+
+.navButton {
 }

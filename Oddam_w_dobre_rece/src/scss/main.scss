@@ -7,11 +7,46 @@
 @import "./styles/HomeDecoration";
 @import "./styles/HomeMainIdea";
 @import "./styles/HomeButton";
+@import "./styles/HomeAboutUs";
+@import "./styles/FoundationItem";
+@import "./styles/HomeOrganizationsView";
+@import "./styles/HomeOrganization";
+@import "./styles/Pagination";
+@import "./styles/HomeContact";
+@import "./styles/FormLogin";
+@import "./styles/FormRegister";
+@import "./styles/LogoutPage";
 
-body {
-  background-color: $color-background;
-  font-family: $font-base;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.body-size {
+html,
+body {
+  font-size: 62.5%;
+  color: $color-grey-dark;
+}
+
+a {
+  text-decoration: none;
+  color: $color-grey-dark;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3.8rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 3.6rem;
+}
+button {
+  cursor: pointer;
 }

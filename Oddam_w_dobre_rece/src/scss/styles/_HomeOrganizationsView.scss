@@ -1,0 +1,50 @@
+@import "../settings/colors";
+
+.foundationsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  h2 {
+    margin-top: 7rem;
+  }
+  img {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+}
+.foundationBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14rem;
+}
+
+.foundationsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1344px;
+  ul {
+    list-style: none;
+    width: 100%;
+  }
+  li {
+    width: 70%;
+    margin: 0 auto 3rem auto;
+    border-bottom: 1px solid $color-grey-dark;
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+}
+
+.foundationTitle {
+  font-size: 2.2rem;
+  max-width: 64rem;
+  margin-top: 6.5rem;
+  margin-bottom: 2.5rem;
+}
